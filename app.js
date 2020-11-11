@@ -3,6 +3,8 @@ const morgan = require("morgan");
 
 const userRoutes = require("./routes/User");
 
+require("./config/passport");
+
 const app = express();
 
 if (process.env.NODE_ENV === "development") {
